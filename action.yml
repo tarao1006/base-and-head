@@ -1,0 +1,25 @@
+name: base and head
+description: base and head
+inputs:
+  base:
+    description: "base"
+  head:
+    description: "head"
+
+outputs:
+  base:
+    description: "base"
+  head:
+    description: "head"
+  merge-base:
+    description: "merge-base"
+  depth:
+    description: "depth"
+
+branding:
+  icon: git-pull-request
+  color: blue
+
+runs:
+  using: node20
+  main: "./dist/index.js"
